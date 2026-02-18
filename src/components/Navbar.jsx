@@ -1,9 +1,10 @@
 export default function Navbar() {
   return (
-    <nav className="flex justify-end items-center px-6 md:px-16 py-6 text-sm uppercase tracking-widest">
-      
-      {/* Hide menu on mobile */}
-      <ul className="hidden md:flex gap-8">
+    <nav className="w-full px-6 md:px-16 py-6 text-sm uppercase tracking-widest">
+
+      {/* Scrollable on mobile */}
+      <ul className="flex gap-6 md:gap-8 overflow-x-auto no-scrollbar whitespace-nowrap">
+        
         <li>
           <a
             href="#about"
@@ -48,8 +49,8 @@ export default function Navbar() {
             Education
           </a>
         </li>
-      </ul>
 
+      </ul>
     </nav>
   );
 }
