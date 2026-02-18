@@ -36,12 +36,13 @@ export default function Hero() {
     <Github size={22} />
   </a>
 
-  <a 
-    href="mailto:someshbagal2605@gmail.com"
-    className="text-white hover:opacity-70 transition"
-  >
-    <Mail size={22} />
-  </a>
+  <a
+  href="mailto:someshbagal2605@gmail.com"
+  className="text-white hover:text-gray-300 transition"
+>
+  <Mail size={22} />
+</a>
+
 </div>
 
       </div>
