@@ -2,8 +2,8 @@ export default function Navbar() {
   return (
     <nav className="w-full px-6 md:px-16 py-6 text-sm uppercase tracking-widest">
 
-      {/* Scrollable on mobile */}
-      <ul className="flex gap-6 md:gap-8 overflow-x-auto no-scrollbar whitespace-nowrap">
+      {/* Show only on medium screens and above */}
+      <ul className="hidden md:flex justify-end gap-8">
         
         <li>
           <a
@@ -51,6 +51,7 @@ export default function Navbar() {
         </li>
 
       </ul>
+
     </nav>
   );
 }
