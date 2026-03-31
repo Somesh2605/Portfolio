@@ -15,7 +15,7 @@ export default function ProjectCard({ title, subtitle, bullets, tags, githubLink
 
   >
     <span className="inline">{title}</span>
-  <Github size={18} className="inline ml-2 text-white-400 align-middle"/>
+  <Github size={24} className="inline ml-2 text-white-400 align-middle"/>
 </a>
 
 </h3>
