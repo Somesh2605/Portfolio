@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react"
+import { Github } from "lucide-react"
 
 export default function ProjectCard({ title, subtitle, bullets, tags, githubLink }) {
   return (
@@ -10,15 +11,13 @@ export default function ProjectCard({ title, subtitle, bullets, tags, githubLink
     href={githubLink}
     target="_blank"
     rel="noopener noreferrer"
-    className="inline-flex items-baseline text-white hover:text-gray-300 transition"
+    className="inline-flex items-center gap-2 text-xl font-semibold hover:text-gray-300 transition"
+
   >
-    {title}
-    <ArrowUpRight
-      size={18}
-      strokeWidth={2}
-      className="ml-1 text-gray-400"
-    />
-  </a>
+    <span className="inline">{title}</span>
+  <Github size={18} className="inline ml-2 text-white-400 align-middle"/>
+</a>
+
 </h3>
 
 

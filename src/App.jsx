@@ -4,52 +4,9 @@ import ProjectCard from "./components/ProjectCard"
 
 function App() {
   return (
-    <div className="relative min-h-screen text-white overflow-hidden">
-
-  {/* Background Image */}
-<div
-  className="absolute inset-0 -z-30 opacity-40"
-  style={{ 
-    backgroundImage: "url('/background.png')", 
-    backgroundSize: "contain",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundAttachment: "fixed"
-    }}
-></div>
-
-{/* Overlay */}
-<div className="absolute inset-0 -z-20 bg-black/50"></div>
-
-  {/* Grid Background */}
-  <div className="absolute inset-0 -z-10 
-    bg-[linear-gradient(to_right,#1a1a1a_1px,transparent_1px),
-        linear-gradient(to_bottom,#1a1a1a_1px,transparent_1px)]
-    bg-[size:40px_40px] opacity-20">
-  </div>
-
-  {/* Graph Line */}
-  <svg
-    className="absolute top-0 left-0 w-full h-full -z-10 opacity-30"
-    viewBox="0 0 1200 600"
-    preserveAspectRatio="none"
-  >
-    <path
-      d="M0 400 Q200 300 400 350 T800 250 T1200 300"
-      stroke="white"
-      strokeWidth="2"
-      fill="none"
-    />
-    <circle cx="200" cy="300" r="3" fill="white" />
-    <circle cx="400" cy="350" r="3" fill="white" />
-    <circle cx="800" cy="250" r="3" fill="white" />
-  </svg>
-      {/* Soft Glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] 
-        bg-gray-700 opacity-20 blur-3xl -z-10">
-      </div>
-
-    <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen bg-black text-white">
+      
+      <div className="max-w-7xl mx-auto">
       <Navbar />
       <Hero />
       <section id="experience" className="min-h-screen px-8 md:px-16 py-24">
